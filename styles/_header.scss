@@ -1,0 +1,90 @@
+header {
+  width: 100%;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 20px;
+
+    .logo-wrapper {
+      width: 78px;
+      padding: 15px;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: space-between;
+      gap: 2px;
+
+      p {
+        font-size: 38px;
+        text-align: center;
+        color: $darkGrayColor;
+      }
+
+      .burger-menu-btn {
+        img {
+          margin-top: -10px;
+          margin-left: -5px;
+        }
+      }
+
+      .toggle-menu {
+        img {
+          width: 26px;
+        }
+      }
+
+      .toggle-btns {
+        display: none;
+
+        &.active {
+          display: flex;
+          flex-direction: column;
+          z-index: 10;
+
+          .btn {
+            margin-top: 1px;
+            border: 1px solid $darkGrayColor;
+          }
+        }
+      }
+    }
+  }
+
+  .menu {
+    position: absolute;
+    top: 62px;
+    right: 20px;
+    width: 184px;
+    height: 90vh;
+    z-index: -1;
+    background: $darkGrayWithOpacity 0% 0% no-repeat padding-box;
+    display: none;
+
+    &.active {
+      display: block;
+    }
+
+    .menu-items {
+      margin: 57px 42px 0px 25px;
+      color: $whiteColor;
+
+      p {
+        &:hover {
+          color: $lightGrayColor;
+        }
+      }
+
+      span {
+        display: block;
+        width: 32px;
+        height: 5px;
+        background: $lightGrayColor 0% 0% no-repeat padding-box;
+        opacity: 1;
+        margin: 11px 0 15px 0;
+        border-radius: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,238 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #44413f;
+}
+body p {
+  font-size: 22px;
+  text-align: left;
+  font: normal normal normal 22px/27px Sandro Universal;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+body .btn {
+  width: 60px;
+  height: 46px;
+  cursor: pointer;
+  background: #d9d9d9 0% 0% no-repeat padding-box;
+  opacity: 1;
+  text-align: center;
+}
+body .btn img:hover,
+body .btn p:hover {
+  opacity: 0.45;
+}
+
+header {
+  width: 100%;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 20px;
+}
+header nav .logo-wrapper {
+  width: 78px;
+  padding: 15px;
+}
+header nav .nav-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 2px;
+}
+header nav .nav-links p {
+  font-size: 38px;
+  text-align: center;
+  color: #44413f;
+}
+header nav .nav-links .burger-menu-btn img {
+  margin-top: -10px;
+  margin-left: -5px;
+}
+header nav .nav-links .toggle-menu img {
+  width: 26px;
+}
+header nav .nav-links .toggle-btns {
+  display: none;
+}
+header nav .nav-links .toggle-btns.active {
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+header nav .nav-links .toggle-btns.active .btn {
+  margin-top: 1px;
+  border: 1px solid #44413f;
+}
+header .menu {
+  position: absolute;
+  top: 62px;
+  right: 20px;
+  width: 184px;
+  height: 90vh;
+  z-index: -1;
+  background: rgba(68, 65, 63, 0.5019607843) 0% 0% no-repeat padding-box;
+  display: none;
+}
+header .menu.active {
+  display: block;
+}
+header .menu .menu-items {
+  margin: 57px 42px 0px 25px;
+  color: #ffffff;
+}
+header .menu .menu-items p:hover {
+  color: #d9d9d9;
+}
+header .menu .menu-items span {
+  display: block;
+  width: 32px;
+  height: 5px;
+  background: #d9d9d9 0% 0% no-repeat padding-box;
+  opacity: 1;
+  margin: 11px 0 15px 0;
+  border-radius: 5px;
+}/*# sourceMappingURL=global.css.map */
