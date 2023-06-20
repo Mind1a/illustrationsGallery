@@ -146,7 +146,7 @@ body {
   background-color: #44413f;
 }
 body p {
-  font-size: 22px;
+  font-size: 1.375rem;
   text-align: left;
   font: normal normal normal 22px/27px Sandro Universal;
   letter-spacing: 0px;
@@ -154,8 +154,8 @@ body p {
   opacity: 1;
 }
 body .btn {
-  width: 60px;
-  height: 46px;
+  width: 3.75rem;
+  height: 2.875rem;
   cursor: pointer;
   background: #d9d9d9 0% 0% no-repeat padding-box;
   opacity: 1;
@@ -172,28 +172,21 @@ header {
 header nav {
   display: flex;
   justify-content: space-between;
-  margin: 15px 20px;
+  margin: 1rem 1.25rem;
 }
 header nav .logo-wrapper {
-  width: 78px;
-  padding: 15px;
+  width: 4.875rem;
+  padding-top: 0.5rem;
 }
 header nav .nav-links {
   display: flex;
   justify-content: space-between;
-  gap: 2px;
+  gap: 0.125rem;
 }
 header nav .nav-links p {
-  font-size: 38px;
+  font-size: 2.375rem;
   text-align: center;
   color: #44413f;
-}
-header nav .nav-links .burger-menu-btn img {
-  margin-top: -10px;
-  margin-left: -5px;
-}
-header nav .nav-links .toggle-menu img {
-  width: 26px;
 }
 header nav .nav-links .toggle-btns {
   display: none;
@@ -204,14 +197,14 @@ header nav .nav-links .toggle-btns.active {
   z-index: 10;
 }
 header nav .nav-links .toggle-btns.active .btn {
-  margin-top: 1px;
-  border: 1px solid #44413f;
+  margin-top: 0.063rem;
+  border: 0.063rem solid #44413f;
 }
 header .menu {
   position: absolute;
-  top: 62px;
-  right: 20px;
-  width: 184px;
+  top: 3.875rem;
+  right: 1.25rem;
+  width: 11.5rem;
   height: 90vh;
   z-index: -1;
   background: rgba(68, 65, 63, 0.5019607843) 0% 0% no-repeat padding-box;
