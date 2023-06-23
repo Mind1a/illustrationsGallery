@@ -1,0 +1,303 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #44413f;
+}
+body p {
+  font-size: 1.375rem;
+  text-align: left;
+  font: normal normal normal 22px/27px Sandro Universal;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+body .btn {
+  width: 3.75rem;
+  height: 2.875rem;
+  cursor: pointer;
+  background: #d9d9d9 0% 0% no-repeat padding-box;
+  opacity: 1;
+  text-align: center;
+}
+body .btn img:hover,
+body .btn p:hover {
+  opacity: 0.45;
+}
+
+header {
+  width: 100%;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 1.25rem;
+}
+header nav .logo-wrapper {
+  width: 4.875rem;
+  padding-top: 0.5rem;
+}
+header nav .nav-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.125rem;
+}
+header nav .nav-links p {
+  font-size: 2.375rem;
+  text-align: center;
+  color: #44413f;
+}
+header nav .nav-links .toggle-btns {
+  display: none;
+}
+header nav .nav-links .toggle-btns.active {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+header nav .nav-links .toggle-btns.active .btn {
+  margin-top: 0.063rem;
+  border: 0.063rem solid #44413f;
+}
+header .menu {
+  position: absolute;
+  top: 3.875rem;
+  right: 1.25rem;
+  width: 11.5rem;
+  height: 90vh;
+  background: rgba(68, 65, 63, 0.5019607843) 0% 0% no-repeat padding-box;
+  display: none;
+}
+header .menu.active {
+  position: fixed;
+  display: block;
+  z-index: 8;
+}
+header .menu .menu-items {
+  margin: 57px 42px 0px 25px;
+  color: #ffffff;
+}
+header .menu .menu-items p:hover {
+  color: #d9d9d9;
+}
+header .menu .menu-items span {
+  display: block;
+  width: 32px;
+  height: 5px;
+  background: #d9d9d9 0% 0% no-repeat padding-box;
+  opacity: 1;
+  margin: 11px 0 15px 0;
+  border-radius: 5px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2.313rem;
+  margin: 1.688rem 2.688rem;
+  place-items: center;
+}
+.gallery-container img {
+  width: 18.313rem;
+  height: 18.313rem;
+  z-index: 7;
+}
+.gallery-container img:hover {
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70.375rem;
+  height: 39.25rem;
+  z-index: 9;
+  display: flex;
+  overflow: auto;
+  background: rgba(68, 65, 63, 0.5019607843);
+}
+.modal .modal-content .modal-content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 5.813rem 1.875rem 0 1.625rem;
+  height: 366px;
+}
+.modal .modal-content .modal-content-text h2 {
+  text-align: left;
+  font-size: 2.375rem;
+  font: normal normal normal 38px/43px Sandro Universal;
+  letter-spacing: 0rem;
+  color: #ffffff;
+}
+.modal .modal-content .modal-content-text p {
+  text-align: left;
+  font-size: 1.75rem;
+  font: normal normal normal 28px/43px Sandro Universal;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+.modal .modal-content .modal-content-text .read-the-book {
+  font-size: 1.125rem;
+}
+.modal .modal-content .modal-content-text .read-the-book a {
+  cursor: pointer;
+}
+.modal .modal-content button {
+  position: absolute;
+  right: 0rem;
+  width: 3.75rem;
+  height: 2.875rem;
+}
+.modal .modal-content button img {
+  width: 1.875rem;
+  height: 1.938rem;
+}
+.modal img {
+  width: 39.25rem;
+  height: 39.25rem;
+}/*# sourceMappingURL=global.css.map */

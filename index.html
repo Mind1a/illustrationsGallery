@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ilustrations Gallery</title>
+    <link rel="stylesheet" href="./css/global.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="https://sandrosbooks.com/">
+          <div class="logo-wrapper btn">
+            <img class="logo" src="./assets/SandrosBooks_logo.svg" alt="logo" />
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li>
+            <button class="btn burger-menu-btn">
+              <img src="./assets/button_burger.svg" alt="burger menu" />
+            </button>
+          </li>
+          <li>
+            <button class="btn toggle-menu">
+              <img src="./assets/button_links.svg" alt="burger menu" />
+            </button>
+            <div class="toggle-btns">
+              <a href="https://www.instagram.com/sandrosbooks/"
+                ><button class="btn">
+                  <img
+                    src="./assets/button_instagra.svg"
+                    alt="instagram"
+                  /></button
+              ></a>
+              <a href="https://www.facebook.com/Sandros.books"
+                ><button class="btn">
+                  <img
+                    src="./assets/button_facebook.svg"
+                    alt="facebook"
+                  /></button
+              ></a>
+              <a href="https://sandrosbooks.com/"
+                ><button class="btn">
+                  <img src="./assets/button_web.svg" alt="website" /></button
+              ></a>
+            </div>
+          </li>
+          <li>
+            <button class="btn">
+              <p>EN</p>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu">
+        <button class="btn close">
+          <img src="./assets/button_close.svg" alt="close" />
+        </button>
+        <div class="menu-items">
+          <a href="./index.html"> <p>სარჩევი</p></a>
+          <span></span>
+          <a href="./index.html"><p>პროექტის შესახებ</p></a>
+          <span></span>
+          <a href="./index.html"><p>წიგნის PDF ვერსია</p></a>
+          <span></span>
+          <a href="./index.html"><p>გალერეა</p></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="gallery-container"></div>
+      <div id="modal-container"></div>
+    </main>
+    <script src="./js/app.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./JS/main.js"></script>
+  </body>
+</html>
