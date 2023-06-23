@@ -26,6 +26,7 @@ header {
         display: none;
 
         &.active {
+          position: fixed;
           display: flex;
           flex-direction: column;
           z-index: 10;
@@ -45,12 +46,13 @@ header {
     right: 1.25rem;
     width: 11.5rem;
     height: 90vh;
-    z-index: -1;
     background: $darkGrayWithOpacity 0% 0% no-repeat padding-box;
     display: none;
 
     &.active {
+      position: fixed;
       display: block;
+      z-index: 8;
     }
 
     .menu-items {
