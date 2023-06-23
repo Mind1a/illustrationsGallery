@@ -1,17 +1,12 @@
-const toggleMenuBtn = document.querySelector(".toggle-menu");
-const toggleBtns = document.querySelector(".toggle-btns");
-const burgerMenuBtn = document.querySelector(".burger-menu-btn");
-const menu = document.querySelector(".menu");
-const closeMenuBtn = document.querySelector(".close");
+// Generates illustration cards
 
-toggleMenuBtn.addEventListener("click", () => {
-  toggleBtns.classList.toggle("active");
-});
+objects.forEach((obj) => {
+  const image = document.createElement("img");
+  image.src = obj.image;
+  image.addEventListener("click", function () {
+    openModal(obj);
+  });
 
-burgerMenuBtn.addEventListener("click", () => {
-  menu.classList.toggle("active");
-});
-
-closeMenuBtn.addEventListener("click", () => {
-  menu.classList.remove("active");
+  const galleryContainer = document.querySelector(".gallery-container");
+  galleryContainer.appendChild(image);
 });
