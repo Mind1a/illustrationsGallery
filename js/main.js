@@ -1,8 +1,11 @@
+import illustationsArray from "./illustrationsData.js";
+
 // Generates illustration cards
 
-objects.forEach((obj) => {
+illustationsArray.forEach((obj) => {
   const image = document.createElement("img");
   image.src = obj.image;
+  image.alt = obj.title;
   image.addEventListener("click", function () {
     openModal(obj);
   });
