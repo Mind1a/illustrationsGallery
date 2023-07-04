@@ -238,6 +238,8 @@ header .menu .menu-items span {
   gap: 2.313rem;
   margin: 1.688rem 2.688rem;
   place-items: center;
+  min-height: 630px;
+  align-items: baseline;
 }
 .gallery-container button {
   border: none;
@@ -305,4 +307,29 @@ header .menu .menu-items span {
 #gallery-popover .modal .modal-content button img {
   width: 1.938rem;
   height: 1.938rem;
+}
+
+#pagination {
+  display: flex;
+  justify-content: space-between;
+  width: 172px;
+  height: 45px;
+  margin: auto;
+  text-align: center;
+  padding: 1rem 0;
+  font: normal normal normal 38px/45px Sandro Universal;
+  letter-spacing: 0px;
+}
+#pagination button {
+  border: none;
+  background-color: transparent;
+  font-size: 38px;
+  color: #ffffff;
+}
+#pagination button:hover {
+  cursor: pointer;
+  color: #000;
+}
+#pagination button:active, #pagination button:disabled {
+  color: #000;
 }/*# sourceMappingURL=global.css.map */

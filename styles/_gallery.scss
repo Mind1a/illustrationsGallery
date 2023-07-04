@@ -4,6 +4,8 @@
   gap: 2.313rem;
   margin: 1.688rem 2.688rem;
   place-items: center;
+  min-height: 630px;
+  align-items: baseline;
 
   button {
     border: none;
@@ -83,6 +85,35 @@
           height: 1.938rem;
         }
       }
+    }
+  }
+}
+
+#pagination {
+  display: flex;
+  justify-content: space-between;
+  width: 172px;
+  height: 45px;
+  margin: auto;
+  text-align: center;
+  padding: 1rem 0;
+  font: normal normal normal 38px/45px Sandro Universal;
+  letter-spacing: 0px;
+
+  button {
+    border: none;
+    background-color: transparent;
+    font-size: 38px;
+    color: $whiteColor;
+
+    &:hover {
+      cursor: pointer;
+      color: $blackColor;
+    }
+
+    &:active,
+    &:disabled {
+      color: $blackColor;
     }
   }
 }
