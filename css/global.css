@@ -263,6 +263,14 @@ header .menu .menu-items span {
   height: 39.25rem;
   overflow: auto;
   background: rgba(68, 65, 63, 0.5019607843);
+  opacity: 0;
+}
+#gallery-popover::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
+#gallery-popover:popover-open {
+  opacity: 1;
+  animation: pop-over-slide 1s ease-out;
 }
 #gallery-popover .modal {
   display: flex;
@@ -273,8 +281,8 @@ header .menu .menu-items span {
 }
 #gallery-popover .modal .modal-content .modal-content-text {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  flex-direction: column;
   margin: 5.813rem 1.875rem 0 1.625rem;
   height: 22.875rem;
 }
@@ -332,4 +340,13 @@ header .menu .menu-items span {
 }
 #pagination button:active, #pagination button:disabled {
   color: #000;
+}
+
+@keyframes pop-over-slide {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=global.css.map */
