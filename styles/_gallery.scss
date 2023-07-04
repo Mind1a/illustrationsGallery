@@ -1,3 +1,5 @@
+@import "./utils/mixins";
+
 .gallery-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -32,7 +34,14 @@
   height: 39.25rem;
   overflow: auto;
   background: $darkGrayWithOpacity;
-
+  opacity: 0;
+  &::backdrop {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  &:popover-open {
+    opacity: 1;
+    animation: pop-over-slide 1s ease-out;
+  }
   .modal {
     display: flex;
 
@@ -43,9 +52,8 @@
 
     .modal-content {
       .modal-content-text {
-        display: flex;
+        @include display_flex(space-between, null);
         flex-direction: column;
-        justify-content: space-between;
         margin: 5.813rem 1.875rem 0 1.625rem;
         height: 22.875rem;
 
@@ -90,8 +98,7 @@
 }
 
 #pagination {
-  display: flex;
-  justify-content: space-between;
+  @include display_flex(space-between, null);
   width: 172px;
   height: 45px;
   margin: auto;
