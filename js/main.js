@@ -1,15 +1,15 @@
-import illustationsArray from "./illustrationsData.js";
+// Generates illustration card
 
-// Generates illustration cards
+export function createCard(obj) {
+  let galleryCard = document.createElement("div");
+  let galleryCardHTML = `
+         <button popovertarget="gallery-popover">
+          <img src="${obj.image}" alt="${obj.title}" />
+        </button> `;
 
-illustationsArray.forEach((obj) => {
-  const image = document.createElement("img");
-  image.src = obj.image;
-  image.alt = obj.title;
-  image.addEventListener("click", function () {
+  galleryCard.innerHTML = galleryCardHTML;
+  galleryCard.addEventListener("click", function () {
     openModal(obj);
   });
-
-  const galleryContainer = document.querySelector(".gallery-container");
-  galleryContainer.appendChild(image);
-});
+  galleryContainer.appendChild(galleryCard);
+}

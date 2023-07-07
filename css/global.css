@@ -183,10 +183,13 @@ header nav .nav-links {
   justify-content: space-between;
   gap: 0.125rem;
 }
-header nav .nav-links p {
+header nav .nav-links button {
   font-size: 2.375rem;
   text-align: center;
   color: #44413f;
+}
+header nav .nav-links button:hover {
+  color: rgba(68, 65, 63, 0.5019607843);
 }
 header nav .nav-links .toggle-btns {
   display: none;
@@ -238,74 +241,116 @@ header .menu .menu-items span {
   gap: 2.313rem;
   margin: 1.688rem 2.688rem;
   place-items: center;
+  min-height: 630px;
+  align-items: baseline;
 }
-.gallery-container img {
+.gallery-container button {
+  border: none;
+  height: 18.313rem;
+}
+.gallery-container button img {
   width: 18.313rem;
   height: 18.313rem;
   z-index: 7;
+  object-fit: cover;
 }
-.gallery-container img:hover {
+.gallery-container button img:hover {
   cursor: pointer;
 }
 
-#modal-container {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  width: 100vw;
-  height: 100vh;
-}
-#modal-container .modal {
+#gallery-popover {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70.375rem;
   height: 39.25rem;
-  display: flex;
   overflow: auto;
   background: rgba(68, 65, 63, 0.5019607843);
+  opacity: 0;
 }
-#modal-container .modal .modal-content .modal-content-text {
+#gallery-popover::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
+#gallery-popover:popover-open {
+  opacity: 1;
+  animation: pop-over-slide 1s ease-out;
+}
+#gallery-popover .modal {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 5.813rem 1.875rem 0 1.625rem;
-  height: 366px;
 }
-#modal-container .modal .modal-content .modal-content-text h2 {
+#gallery-popover .modal img {
+  width: 39.25rem;
+  height: 39.25rem;
+}
+#gallery-popover .modal .modal-content .modal-content-text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 5.813rem 1.875rem 0 1.625rem;
+  height: 22.875rem;
+}
+#gallery-popover .modal .modal-content .modal-content-text h2 {
   text-align: left;
   font-size: 2.375rem;
   font: normal normal normal 38px/43px Sandro Universal;
   letter-spacing: 0rem;
   color: #ffffff;
 }
-#modal-container .modal .modal-content .modal-content-text p {
+#gallery-popover .modal .modal-content .modal-content-text p {
   text-align: left;
   font-size: 1.75rem;
   font: normal normal normal 28px/43px Sandro Universal;
   letter-spacing: 0px;
   color: #ffffff;
 }
-#modal-container .modal .modal-content .modal-content-text .read-the-book {
+#gallery-popover .modal .modal-content .modal-content-text .read-the-book {
   font-size: 1.125rem;
 }
-#modal-container .modal .modal-content .modal-content-text .read-the-book a {
+#gallery-popover .modal .modal-content .modal-content-text .read-the-book a {
   cursor: pointer;
 }
-#modal-container .modal .modal-content button {
+#gallery-popover .modal .modal-content button {
   position: absolute;
   right: 0rem;
   width: 3.75rem;
   height: 2.875rem;
 }
-#modal-container .modal .modal-content button img {
-  width: 1.875rem;
+#gallery-popover .modal .modal-content button img {
+  width: 1.938rem;
   height: 1.938rem;
 }
-#modal-container .modal img {
-  width: 39.25rem;
-  height: 39.25rem;
+
+#pagination {
+  display: flex;
+  justify-content: space-between;
+  width: 172px;
+  height: 45px;
+  margin: auto;
+  text-align: center;
+  padding: 1rem 0;
+  font: normal normal normal 38px/45px Sandro Universal;
+  letter-spacing: 0px;
+}
+#pagination button {
+  border: none;
+  background-color: transparent;
+  font-size: 38px;
+  color: #ffffff;
+}
+#pagination button:hover {
+  cursor: pointer;
+  color: #000;
+}
+#pagination button:active, #pagination button:disabled {
+  color: #000;
+}
+
+@keyframes pop-over-slide {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=global.css.map */

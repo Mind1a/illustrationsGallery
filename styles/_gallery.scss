@@ -1,48 +1,62 @@
+@import "./utils/mixins";
+
 .gallery-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2.313rem;
   margin: 1.688rem 2.688rem;
   place-items: center;
+  min-height: 630px;
+  align-items: baseline;
 
-  img {
-    width: 18.313rem;
+  button {
+    border: none;
     height: 18.313rem;
-    z-index: 7;
 
-    &:hover {
-      cursor: pointer;
+    img {
+      width: 18.313rem;
+      height: 18.313rem;
+      z-index: 7;
+      object-fit: cover;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }
 
-#modal-container {
-  display: none;
+#gallery-popover {
   position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  width: 100vw;
-  height: 100vh;
-
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70.375rem;
+  height: 39.25rem;
+  overflow: auto;
+  background: $darkGrayWithOpacity;
+  opacity: 0;
+  &::backdrop {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  &:popover-open {
+    opacity: 1;
+    animation: pop-over-slide 1s ease-out;
+  }
   .modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70.375rem;
-    height: 39.25rem;
     display: flex;
-    overflow: auto;
-    background: $darkGrayWithOpacity;
+
+    img {
+      width: 39.25rem;
+      height: 39.25rem;
+    }
 
     .modal-content {
       .modal-content-text {
-        display: flex;
+        @include display_flex(space-between, null);
         flex-direction: column;
-        justify-content: space-between;
         margin: 5.813rem 1.875rem 0 1.625rem;
-        height: 366px;
+        height: 22.875rem;
 
         h2 {
           text-align: left;
@@ -76,15 +90,38 @@
         height: 2.875rem;
 
         img {
-          width: 1.875rem;
+          width: 1.938rem;
           height: 1.938rem;
         }
       }
     }
+  }
+}
 
-    img {
-      width: 39.25rem;
-      height: 39.25rem;
+#pagination {
+  @include display_flex(space-between, null);
+  width: 172px;
+  height: 45px;
+  margin: auto;
+  text-align: center;
+  padding: 1rem 0;
+  font: normal normal normal 38px/45px Sandro Universal;
+  letter-spacing: 0px;
+
+  button {
+    border: none;
+    background-color: transparent;
+    font-size: 38px;
+    color: $whiteColor;
+
+    &:hover {
+      cursor: pointer;
+      color: $blackColor;
+    }
+
+    &:active,
+    &:disabled {
+      color: $blackColor;
     }
   }
 }
