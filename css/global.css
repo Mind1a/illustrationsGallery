@@ -183,10 +183,13 @@ header nav .nav-links {
   justify-content: space-between;
   gap: 0.125rem;
 }
-header nav .nav-links p {
+header nav .nav-links button {
   font-size: 2.375rem;
   text-align: center;
   color: #44413f;
+}
+header nav .nav-links button:hover {
+  color: rgba(68, 65, 63, 0.5019607843);
 }
 header nav .nav-links .toggle-btns {
   display: none;

@@ -5,7 +5,7 @@ export function createCard(obj) {
   let galleryCardHTML = `
          <button popovertarget="gallery-popover">
           <img src="${obj.image}" alt="${obj.title}" />
-        </button>; `;
+        </button> `;
 
   galleryCard.innerHTML = galleryCardHTML;
   galleryCard.addEventListener("click", function () {
