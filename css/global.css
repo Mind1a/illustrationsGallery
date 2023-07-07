@@ -249,6 +249,7 @@ header .menu .menu-items span {
   width: 18.313rem;
   height: 18.313rem;
   z-index: 7;
+  object-fit: cover;
 }
 .gallery-container button img:hover {
   cursor: pointer;
