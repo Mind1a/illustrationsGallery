@@ -191,16 +191,19 @@ header nav .nav-links button {
 header nav .nav-links button:hover {
   color: rgba(68, 65, 63, 0.5019607843);
 }
-header nav .nav-links .toggle-btns {
+header nav .nav-links .toggle-btns,
+header nav .nav-links .language-toggle-btns {
   display: none;
 }
-header nav .nav-links .toggle-btns.active {
+header nav .nav-links .toggle-btns.active,
+header nav .nav-links .language-toggle-btns.active {
   position: fixed;
   display: flex;
   flex-direction: column;
   z-index: 10;
 }
-header nav .nav-links .toggle-btns.active .btn {
+header nav .nav-links .toggle-btns.active .btn,
+header nav .nav-links .language-toggle-btns.active .btn {
   margin-top: 0.063rem;
   border: 0.063rem solid #44413f;
 }
