@@ -5,6 +5,8 @@ const menu = document.querySelector(".menu");
 const closeMenuBtn = document.querySelector(".close");
 const galleryContainer = document.querySelector(".gallery-container");
 const paginationContainer = document.getElementById("pagination");
+const languageBtn = document.getElementById("language-btn");
+const languageToggleBtns = document.querySelector(".language-toggle-btns");
 
 toggleMenuBtn.addEventListener("click", () => {
   toggleBtns.classList.toggle("active");
@@ -16,4 +18,8 @@ burgerMenuBtn.addEventListener("click", () => {
 
 closeMenuBtn.addEventListener("click", () => {
   menu.classList.remove("active");
+});
+
+languageBtn.addEventListener("click", () => {
+  languageToggleBtns.classList.toggle("active");
 });

@@ -25,7 +25,8 @@ header {
         }
       }
 
-      .toggle-btns {
+      .toggle-btns,
+      .language-toggle-btns {
         display: none;
 
         &.active {

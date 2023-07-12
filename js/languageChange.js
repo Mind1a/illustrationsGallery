@@ -1,23 +1,36 @@
 // Creates toggle button
 const languageButton = document.getElementById("language-btn");
-languageButton.addEventListener("click", toggleLanguage);
+const languageToggleBtn = document.querySelectorAll(".language-btn");
+languageToggleBtn.forEach((btn) => {
+  btn.addEventListener("click", () => toggleLanguage(btn));
+});
 
-function toggleLanguage() {
-  if (languageButton.innerHTML === "GE") {
-    languageButton.innerHTML = "EN";
-    changeLanguage();
-  } else {
-    languageButton.innerHTML = "GE";
-    changeLanguage();
+function toggleLanguage(btn) {
+  let currentLanguage = languageButton.innerHTML;
+  let newLanguage = btn.innerHTML;
+  languageButton.innerHTML = newLanguage;
+  btn.innerHTML = currentLanguage;
+
+  let lang = newLanguage;
+
+  if (lang === "GE") {
+    changeLanguage("GE");
+  } else if (lang === "EN") {
+    changeLanguage("EN");
+  } else if (lang == "IT") {
+    changeLanguage("IT");
   }
+
+  languageToggleBtns.classList.toggle("active");
 }
 
 // Changes the language in the menu
-function changeLanguage() {
-  let lang = languageButton.innerHTML;
+function changeLanguage(lang) {
   const menuItems = document.querySelector(".menu-items");
-  if (lang == "GE") {
-    menuItems.innerHTML = `<a href="./index.html"> 
+
+  switch (lang) {
+    case "GE":
+      menuItems.innerHTML = `<a href="./index.html"> 
       <p>სარჩევი</p></a>
       <span></span>
       <a href="./index.html">
@@ -26,8 +39,10 @@ function changeLanguage() {
       <a href="./index.html"><p>წიგნის PDF ვერსია</p></a>
       <span></span>
       <a href="./index.html"><p>გალერეა</p></a>`;
-  } else if (lang == "EN") {
-    menuItems.innerHTML = `<a href="./index.html"> 
+      break;
+
+    case "EN":
+      menuItems.innerHTML = `<a href="./index.html"> 
       <p>Table of contents</p></a>
       <span></span>
       <a href="./index.html">
@@ -36,6 +51,19 @@ function changeLanguage() {
       <a href="./index.html"><p>PDF version of the book</p></a>
       <span></span>
       <a href="./index.html"><p>Gallery</p></a>`;
+      break;
+
+    case "IT":
+      menuItems.innerHTML = `<a href="./index.html"> 
+      <p>sommario</p></a>
+      <span></span>
+      <a href="./index.html">
+      <p>Informazioni sul progetto</p></a>
+      <span></span>
+      <a href="./index.html"><p>Versione PDF del libro</p></a>
+      <span></span>
+      <a href="./index.html"><p>Galleria</p></a>`;
+      break;
   }
 }
 
@@ -60,6 +88,15 @@ function changeModalLanguage(obj) {
         <p>${obj.description.en}</p>
         <h2>From book: ${obj.title.en} ${obj.title.en}</h2>
         <p class="read-the-book"> read the book: <a>IT</a> | <a>RU</a></p>
+      `;
+      break;
+
+    case "IT":
+      modalContentText.innerHTML = `
+        <h2>${obj.title.it}</h2>
+        <p>${obj.description.it}</p>
+        <h2>Dal libro: ${obj.title.it} ${obj.title.it}</h2>
+        <p class="read-the-book"> leggi il libro: <a>IT</a> | <a>RU</a></p>
       `;
       break;
   }
