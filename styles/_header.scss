@@ -25,7 +25,8 @@ header {
         }
       }
 
-      .toggle-btns {
+      .toggle-btns,
+      .language-toggle-btns {
         display: none;
 
         &.active {
@@ -33,6 +34,7 @@ header {
           display: flex;
           flex-direction: column;
           z-index: 10;
+          animation: button-slide-down 0.5s ease-out;
 
           .btn {
             margin-top: 0.063rem;
@@ -56,6 +58,7 @@ header {
       position: fixed;
       display: block;
       z-index: 8;
+      animation: menu-slide 0.5s ease-out;
     }
 
     .menu-items {

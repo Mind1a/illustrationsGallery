@@ -191,16 +191,20 @@ header nav .nav-links button {
 header nav .nav-links button:hover {
   color: rgba(68, 65, 63, 0.5019607843);
 }
-header nav .nav-links .toggle-btns {
+header nav .nav-links .toggle-btns,
+header nav .nav-links .language-toggle-btns {
   display: none;
 }
-header nav .nav-links .toggle-btns.active {
+header nav .nav-links .toggle-btns.active,
+header nav .nav-links .language-toggle-btns.active {
   position: fixed;
   display: flex;
   flex-direction: column;
   z-index: 10;
+  animation: button-slide-down 0.5s ease-out;
 }
-header nav .nav-links .toggle-btns.active .btn {
+header nav .nav-links .toggle-btns.active .btn,
+header nav .nav-links .language-toggle-btns.active .btn {
   margin-top: 0.063rem;
   border: 0.063rem solid #44413f;
 }
@@ -217,6 +221,7 @@ header .menu.active {
   position: fixed;
   display: block;
   z-index: 8;
+  animation: menu-slide 0.5s ease-out;
 }
 header .menu .menu-items {
   margin: 57px 42px 0px 25px;
@@ -252,7 +257,8 @@ header .menu .menu-items span {
   width: 18.313rem;
   height: 18.313rem;
   z-index: 7;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .gallery-container button img:hover {
   cursor: pointer;
@@ -352,5 +358,25 @@ header .menu .menu-items span {
   }
   to {
     opacity: 1;
+  }
+}
+@keyframes button-slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-30%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes menu-slide {
+  from {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
   }
 }/*# sourceMappingURL=global.css.map */

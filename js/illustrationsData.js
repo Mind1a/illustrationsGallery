@@ -4,10 +4,12 @@ const illustationsArray = [
     title: {
       en: "Illustration Title",
       ge: "ილუსტრაციის სახელი",
+      it: "titolo dell'illustrazione",
     },
     description: {
       en: "Short text short text short text short text short text short text short text short text",
       ge: "მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი",
+      it: "Testo breve testo breve testo breve testo breve testo breve testo breve testo breve",
     },
   },
   {
@@ -15,10 +17,12 @@ const illustationsArray = [
     title: {
       en: "Illustration Title",
       ge: "ილუსტრაციის სახელი",
+      it: "titolo dell'illustrazione",
     },
     description: {
       en: "Short text short text short text short text short text short text short text short text",
       ge: "მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი",
+      it: "Testo breve testo breve testo breve testo breve testo breve testo breve testo breve",
     },
   },
   {
@@ -26,10 +30,12 @@ const illustationsArray = [
     title: {
       en: "Illustration Title",
       ge: "ილუსტრაციის სახელი",
+      it: "titolo dell'illustrazione",
     },
     description: {
       en: "Short text short text short text short text short text short text short text short text",
       ge: "მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი",
+      it: "Testo breve testo breve testo breve testo breve testo breve testo breve testo breve",
     },
   },
   {
@@ -37,10 +43,12 @@ const illustationsArray = [
     title: {
       en: "Illustration Title",
       ge: "ილუსტრაციის სახელი",
+      it: "titolo dell'illustrazione",
     },
     description: {
       en: "Short text short text short text short text short text short text short text short text",
       ge: "მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი",
+      it: "Testo breve testo breve testo breve testo breve testo breve testo breve testo breve",
     },
   },
   {
@@ -48,10 +56,12 @@ const illustationsArray = [
     title: {
       en: "Illustration Title",
       ge: "ილუსტრაციის სახელი",
+      it: "titolo dell'illustrazione",
     },
     description: {
       en: "Short text short text short text short text short text short text short text short text",
       ge: "მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი",
+      it: "Testo breve testo breve testo breve testo breve testo breve testo breve testo breve",
     },
   },
   {
@@ -59,10 +69,12 @@ const illustationsArray = [
     title: {
       en: "Illustration Title",
       ge: "ილუსტრაციის სახელი",
+      it: "titolo dell'illustrazione",
     },
     description: {
       en: "Short text short text short text short text short text short text short text short text",
       ge: "მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი",
+      it: "Testo breve testo breve testo breve testo breve testo breve testo breve testo breve",
     },
   },
   {
@@ -70,10 +82,12 @@ const illustationsArray = [
     title: {
       en: "Illustration Title",
       ge: "ილუსტრაციის სახელი",
+      it: "titolo dell'illustrazione",
     },
     description: {
       en: "Short text short text short text short text short text short text short text short text",
       ge: "მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი",
+      it: "Testo breve testo breve testo breve testo breve testo breve testo breve testo breve",
     },
   },
   {
@@ -81,10 +95,12 @@ const illustationsArray = [
     title: {
       en: "Illustration Title",
       ge: "ილუსტრაციის სახელი",
+      it: "titolo dell'illustrazione",
     },
     description: {
       en: "Short text short text short text short text short text short text short text short text",
       ge: "მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი",
+      it: "Testo breve testo breve testo breve testo breve testo breve testo breve testo breve",
     },
   },
   {
@@ -92,10 +108,12 @@ const illustationsArray = [
     title: {
       en: "Illustration Title",
       ge: "ილუსტრაციის სახელი",
+      it: "titolo dell'illustrazione",
     },
     description: {
       en: "Short text short text short text short text short text short text short text short text",
       ge: "მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი",
+      it: "Testo breve testo breve testo breve testo breve testo breve testo breve testo breve",
     },
   },
   {
@@ -103,10 +121,12 @@ const illustationsArray = [
     title: {
       en: "Illustration Title",
       ge: "ილუსტრაციის სახელი",
+      it: "titolo dell'illustrazione",
     },
     description: {
       en: "Short text short text short text short text short text short text short text short text",
       ge: "მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი",
+      it: "Testo breve testo breve testo breve testo breve testo breve testo breve testo breve",
     },
   },
   {
@@ -114,10 +134,12 @@ const illustationsArray = [
     title: {
       en: "Illustration Title",
       ge: "ილუსტრაციის სახელი",
+      it: "titolo dell'illustrazione",
     },
     description: {
       en: "Short text short text short text short text short text short text short text short text",
       ge: "მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი",
+      it: "Testo breve testo breve testo breve testo breve testo breve testo breve testo breve",
     },
   },
   {
@@ -125,10 +147,12 @@ const illustationsArray = [
     title: {
       en: "Illustration Title",
       ge: "ილუსტრაციის სახელი",
+      it: "titolo dell'illustrazione",
     },
     description: {
       en: "Short text short text short text short text short text short text short text short text",
       ge: "მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი",
+      it: "Testo breve testo breve testo breve testo breve testo breve testo breve testo breve",
     },
   },
   {
@@ -136,10 +160,12 @@ const illustationsArray = [
     title: {
       en: "Illustration Title",
       ge: "ილუსტრაციის სახელი",
+      it: "titolo dell'illustrazione",
     },
     description: {
       en: "Short text short text short text short text short text short text short text short text",
       ge: "მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი",
+      it: "Testo breve testo breve testo breve testo breve testo breve testo breve testo breve",
     },
   },
   {
@@ -147,10 +173,12 @@ const illustationsArray = [
     title: {
       en: "Illustration Title",
       ge: "ილუსტრაციის სახელი",
+      it: "titolo dell'illustrazione",
     },
     description: {
       en: "Short text short text short text short text short text short text short text short text",
       ge: "მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი",
+      it: "Testo breve testo breve testo breve testo breve testo breve testo breve testo breve",
     },
   },
   {
@@ -158,10 +186,12 @@ const illustationsArray = [
     title: {
       en: "Illustration Title",
       ge: "ილუსტრაციის სახელი",
+      it: "titolo dell'illustrazione",
     },
     description: {
       en: "Short text short text short text short text short text short text short text short text",
       ge: "მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი",
+      it: "Testo breve testo breve testo breve testo breve testo breve testo breve testo breve",
     },
   },
   {
@@ -169,10 +199,12 @@ const illustationsArray = [
     title: {
       en: "Illustration Title",
       ge: "ილუსტრაციის სახელი",
+      it: "titolo dell'illustrazione",
     },
     description: {
       en: "Short text short text short text short text short text short text short text short text",
       ge: "მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი",
+      it: "Testo breve testo breve testo breve testo breve testo breve testo breve testo breve",
     },
   },
   {
@@ -180,10 +212,12 @@ const illustationsArray = [
     title: {
       en: "Illustration Title",
       ge: "ილუსტრაციის სახელი",
+      it: "titolo dell'illustrazione",
     },
     description: {
       en: "Short text short text short text short text short text short text short text short text",
       ge: "მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი",
+      it: "Testo breve testo breve testo breve testo breve testo breve testo breve testo breve",
     },
   },
   {
@@ -191,10 +225,12 @@ const illustationsArray = [
     title: {
       en: "Illustration Title",
       ge: "ილუსტრაციის სახელი",
+      it: "titolo dell'illustrazione",
     },
     description: {
       en: "Short text short text short text short text short text short text short text short text",
       ge: "მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი მოკლე ტექსტი",
+      it: "Testo breve testo breve testo breve testo breve testo breve testo breve testo breve",
     },
   },
 ];
