@@ -142,6 +142,13 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: "Sandro Universal";
+  src: url("../fonts/Sandro-Bold.ttf") format("truetype"), url("../fonts/Sandro-BoldItalic.ttf") format("truetype"), url("../fonts/Sandro-Regular.ttf") format("truetype"), url("../fonts/Sandro-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 body {
   background-color: #44413f;
 }
@@ -184,6 +191,7 @@ header nav .nav-links {
   gap: 0.125rem;
 }
 header nav .nav-links button {
+  font: normal normal normal 22px/27px Sandro Universal;
   font-size: 2.375rem;
   text-align: center;
   color: #44413f;
