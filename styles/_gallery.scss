@@ -145,11 +145,53 @@
   #pagination {
     padding-bottom: 1.688rem;
   }
+
+  #gallery-popover {
+    width: 90%;
+    .modal {
+      img {
+        width: 50%;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 64rem) {
   .gallery-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  #gallery-popover {
+    height: 90%;
+    width: 30rem;
+
+    .modal {
+      flex-direction: column-reverse;
+      justify-content: space-between;
+
+      .modal-image {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50%;
+        margin: auto;
+        object-fit: cover;
+      }
+
+      .modal-content {
+        .modal-content-text {
+          margin-top: 0.5rem;
+          height: 20rem;
+
+          h2 {
+            font-size: 1.5rem;
+          }
+          p {
+            font-size: 1.125rem;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -162,6 +204,28 @@
     li {
       &.arrow {
         display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 35rem) {
+  #gallery-popover {
+    width: 20rem;
+  }
+
+  #gallery-popover {
+    .modal {
+      .modal-content {
+        .modal-content-text {
+          margin-top: 0.2rem;
+          h2 {
+            font-size: 1.25rem;
+          }
+          p {
+            font-size: 1rem;
+          }
+        }
       }
     }
   }

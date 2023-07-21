@@ -3,7 +3,7 @@ function openModal(obj) {
 
   const popoverHTML = `
           <div class="modal">
-            <img src="${obj.image}" alt="${obj.title.en}">
+            <img class="modal-image" src="${obj.image}" alt="${obj.title.en}">
             <div class="modal-content">
             <button class="btn close" popovertarget="gallery-popover" popovertargetaction="hide">
               <img class= "modal-close" src="./assets/button_close.svg" alt="close" />
