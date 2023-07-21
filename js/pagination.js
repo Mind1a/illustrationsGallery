@@ -19,7 +19,7 @@ function createPagination(pages, page) {
   let pageCutHigh = page + 1;
 
   if (page > 1) {
-    str += createPaginationItem(page - 1, "<");
+    str += createPaginationItem(page - 1, "<", "arrow");
   }
 
   if (pages < 6) {
@@ -67,7 +67,7 @@ function createPagination(pages, page) {
   }
 
   if (page < pages) {
-    str += createPaginationItem(page + 1, ">");
+    str += createPaginationItem(page + 1, ">", "arrow");
   }
 
   str += "</ul>";

@@ -347,18 +347,18 @@ header .menu .menu-items span {
   list-style: none;
   padding: 0;
   margin: 0;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
 }
 #pagination ul li {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #ffffff;
-  font-size: 34px;
+  font-size: 2.125rem;
   font: normal normal normal 38px/43px Sandro Universal;
 }
 #pagination ul li a {
-  padding: 5px 10px;
+  padding: 0.3125rem 0.625rem;
   cursor: pointer;
 }
 #pagination ul li.active, #pagination ul li:hover {
@@ -369,30 +369,36 @@ header .menu .menu-items span {
   color: #000;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 120rem) {
   .gallery-container {
     grid-template-columns: repeat(5, 1fr);
   }
 }
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 85rem) {
   .gallery-container {
     grid-template-columns: repeat(3, 1fr);
   }
+  #pagination {
+    padding-bottom: 1.688rem;
+  }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 64rem) {
   .gallery-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   .gallery-container {
     grid-template-columns: 1fr;
   }
+  #pagination li.arrow {
+    display: none;
+  }
 }
-@media screen and (min-height: 800px) and (min-width: 1360px) {
+@media screen and (min-height: 50rem) and (min-width: 85rem) {
   #pagination {
     position: absolute;
-    bottom: 20px;
+    bottom: 0;
     left: 50%;
     transform: translate(-50%, -50%);
   }
